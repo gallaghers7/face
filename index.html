@@ -13,28 +13,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script type="text/javascript">
-
-var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\s ce|palm/i.test(navigator.userAgent.toLowerCase()))
-
-   
-
-var parts = location.hostname.split('.');
-
-var subdomain = parts.shift();
-
-  
-
-if(mobile){
-
-    document.location="mobile.html";
-
-} else if ( !mobile &amp;&amp; subdomain == 'm' ){
-
-    document.location="index.html";
-
+<script>
+//JavaScript Dokuman
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+	window.location ="mobile.html";
 }
-
 </script>
   <style type="text/css">
   	.hr1{
